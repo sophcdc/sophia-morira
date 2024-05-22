@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once to One</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function abrirGoogle() {
+            window.open('https://www.google.com', '_blank');
+        }
+
+        function abrirContacto() {
+            const nuevaVentana = window.open('', '_blank');
+            nuevaVentana.document.write(`
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Contacto</title>
+                    <style>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            font-family: Arial, sans-serif;
+                            background-color: #f4f4f4;
+                        }
+                        h1 {
+                            font-size: 3em;
+                            color: #333;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h2>Ig:once.to.one</h2>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Once to One</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="abrirGoogle()">Inicio</a></li>
+                <li><a href="javascript:void(0)" onclick="abrirContacto()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Ropa</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="https://i.pinimg.com/736x/cb/d5/5b/cbd55bfcade92479d71f71b95ee5e553.jpg" alt="Vestido floral">
+                <h3>Vestido floral</h3>
+                <h4>xs s m l xl</h4>
+                <p>Precio: $90.00</p>
+            </div>
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/e5/c1/d9/e5c1d9140896c134d6a789da5aab5d59.jpg" alt="Top negro">
+                <h3>Top negro</h3>
+                <h4>xs s m l xl</h4>
+                <p>Precio: $50.00</p>
+            </div>
+            <div class="producto">
+                <img src="https://i.pinimg.com/736x/29/2b/a3/292ba391ba18fa2a43f953e8450db4dd.jpg" alt="Baggy Jeans">
+                <h3>Baggy jeans</h3>
+                <h4>xs s m l xl</h4>
+                <p>Precio: $230.00</p>
+            </div>    
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/f1/64/90/f164903de8fded58017c443355c97ec0.jpg" alt="tacones cafes de plataforma">
+                <h3>Tacones cafe de pltaforma</h3>
+                <h4>4 6 8 9</h4>
+                <p>Precio: $540.00</p>
+            </div>       
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/6d/4e/a9/6d4ea9dc35acdf4da703af91d6686cc9.jpg" alt="tacones cafes de plataforma">
+                <h3>Converse Taylor All Star</h3>
+                <h4>4 6 8 9</h4>
+                <p>Precio: $1200.00</p>
+            </div> 
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/ea/bf/96/eabf96251e69bdb46af816f8588fef71.jpg" alt="tacones cafes de plataforma">
+                <h3>Vestido para niña</h3>
+                <h4>3 4 6 7 años</h4>
+                <p>Precio: $350.00</p>
+            </div> 
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/08/df/84/08df844ce9dcc53ff3a913655b70beb5.jpg" alt="tacones cafes de plataforma">
+                <h3>NUEVA TEMPORADA</h3>
+                <h3>NUEVA TEMPORAD</h3>
+                <h3>NUEVA TEMPORA</h3>
+                <h3>NUEVA TEMPOR</h3>
+                <h3>NUEVA TEMPO</h3>
+                <h3>NUEVA TEMP</h3>
+                <h3>NUEVA TEM</h3>
+                <h3>NUEVA TE</h3>
+                <h3>NUEVA T</h3>
+                <h3>NUEVA</h3>
+            </div> 
+            <div class="producto">
+                <img src="https://i.pinimg.com/564x/25/ed/da/25eddaea96402d7f67316b5b372a0744.jpg" alt="tacones cafes de plataforma">
+                <h3>Lentes de sol</h3>
+                <p>Precio: $235.00</p>
+            </div> 
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Once to One. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+    
